@@ -7,8 +7,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class Generator {
-    private Generator() {
+public class DataGenerator {
+    private DataGenerator() {
 
     }
 
@@ -21,7 +21,7 @@ public class Generator {
     }
 
     public static String generateCity(String locale) {
-        String[] cities = {"Санкт-Петербург", "Москва", "Новгород", "Саратов", "Вологда", "Калининград", "Новосибирск"};
+        String[] cities = {"Москва", "Красноярск", "Вологда", "Саратов", "Омск", "Челябинск", "Владивосток", "Мурманск"};
         int n = (int) Math.floor(Math.random() * cities.length);
         String city = cities[n];
         return city;
@@ -51,7 +51,6 @@ public class Generator {
             String city;
             String name;
             String phone;
-
         }
     }
 }
